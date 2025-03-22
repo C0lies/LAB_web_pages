@@ -884,7 +884,7 @@ section,
 .hero .container {
   width: 55%;
   height: 62vh;
-  background: url('../assets/img/download/hero-bg.jpg') center/cover no-repeat;
+  background: url('../img/download/hero-bg.jpg') center/cover no-repeat;
 }
 
 .hero .container2 {
