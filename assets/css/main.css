@@ -884,7 +884,7 @@ section,
 .hero .container {
   width: 55%;
   height: 62vh;
-  background: url('file:///C:/Users/klips/Desktop/web%20projekt/ver2/assets/img/download/hero-bg.jpg') center/cover no-repeat;
+  background: url('../assets/img/download/hero-bg.jpg') center/cover no-repeat;
 }
 
 .hero .container2 {
