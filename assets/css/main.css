@@ -865,71 +865,178 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  min-height: 62vh;
-  position: flex;
-  clip-path: inset(0);
-  /* padding: 120px 0 60px 0; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/* Desktop Navigation */
+@media (min-width: 1200px) {
 
-.hero img {
-  position: flex;
-  object-fit: cover;
-}
+  .hero {
+    width: 100%;
+    min-height: 62vh;
+    position: flex;
+    clip-path: inset(0);
+    /* padding: 120px 0 60px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.hero .container {
-  width: 55%;
-  height: 62vh;
-  background: url('../img/download/hero-bg.jpg') center/cover no-repeat;
-}
+  .hero img {
+    position: flex;
+    object-fit: cover;
+  }
 
-.hero .container2 {
-  width: 45%;
-  /* Połowa szerokości sekcji */
-  height: 62vh;
-  background-color: #0b0d74;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .hero .container {
+    width: 55%;
+    height: 62vh;
+    background: url('../img/download/hero-bg.jpg') center/cover no-repeat;
+  }
 
-.hero h2 {
-  /* margin: 0 0 10px 0; */
-  font-size: 51px;
-  font-weight: 700;
-  color: #ffffff;
-  width: 100%;
-}
+  .hero .container2 {
+    width: 45%;
+    /* Połowa szerokości sekcji */
+    height: 62vh;
+    background-color: #0b0d74;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 
-.hero h2 .underlight {
-  position: relative;
-  z-index: 1;
-  padding: 0 5px;
-  display: inline-block;
-}
+  .hero h2 {
+    /* margin: 0 0 10px 0; */
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 100%;
+  }
 
-.hero h2 .underlight:before {
-  content: "";
-  position: absolute;
-  height: 50%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: var(--accent-color);
-  z-index: -1;
-}
+  .hero h2 .underlight {
+    position: relative;
+    z-index: 1;
+    padding: 0 5px;
+    display: inline-block;
+  }
 
-.hero p {
-  color: #ffffff;
-  margin-bottom: 30px;
-  font-size: 18px;
+  .hero h2 .underlight:before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--accent-color);
+    z-index: -1;
+  }
+
+  .hero p {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    width: 100vh !important;
+    min-height: 62vh;
+    position: flex;
+    clip-path: inset(0);
+    /* padding: 120px 0 60px 0; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+  }
+
+  .hero .container {
+    width: 100% !important;
+    height: 62vh;
+    background: url('../img/download/hero-bg.jpg') center/cover no-repeat;
+  }
+
+  .hero .container2 {
+    width: 100vh;
+    /* Połowa szerokości sekcji */
+    height: 62vh;
+    background-color: #0b0d74;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero .container2 h2 {
+    width: 50%;
+    text-align: left;
+
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero {
+    width: 100vh !important;
+    min-height: 62vh;
+    position: flex;
+    clip-path: inset(0);
+    /* padding: 120px 0 60px 0; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+  }
+
+  /* .hero img {
+    position: flex;
+    object-fit: cover;
+  } */
+
+  .hero .container {
+    width: 100% !important;
+    height: 62vh;
+    background: url('../img/download/hero-bg.jpg') center/cover no-repeat;
+  }
+
+  .hero .container2 {
+    width: 100vh;
+    /* Połowa szerokości sekcji */
+    height: 62vh;
+    background-color: #0b0d74;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .container2 h2 {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+
+  .hero h2 .underlight {
+    position: relative;
+    z-index: 1;
+    padding: 0 5px;
+    display: inline-block;
+  }
+
+  .hero h2 .underlight:before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--accent-color);
+    z-index: -1;
+  }
+
+  .hero p {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
   .hero h2 {
     font-size: 32px;
   }
@@ -965,7 +1072,6 @@ section,
   padding: 0 35px;
   /* Większy padding */
 }
-
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
